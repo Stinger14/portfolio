@@ -1,0 +1,12 @@
+h1 {
+    color: darkorange;
+}
+
+.portfolio {
+    height: 300px;
+    width: auto;
+}
+
+.cover {
+    padding-bottom: 12px;
+}
