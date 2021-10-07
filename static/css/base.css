@@ -10,3 +10,8 @@ h1 {
 .cover {
     padding-bottom: 12px;
 }
+
+.btn-info {
+    color: #1b1b1b;
+    padding: 2px;
+}
