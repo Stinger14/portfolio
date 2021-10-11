@@ -27,6 +27,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# ? use when deploying with docker
 # DEBUG = int(os.environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = ['localhost']
@@ -171,6 +173,8 @@ AUTHENTICATION_BACKENDS = (
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'maxgarcia6@gmail.com'
 
 # ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
