@@ -5,10 +5,9 @@ services:
     build: .
     command: python /app/manage.py runserver 0.0.0.0:8000
     environment:
-      - SECRET_KEY=django-insecure-=2#6&5#1=!bi(ph-+jb-!3n6j(n)$4#x#3m1jro$erun%0+ald
-      - DEBUG=1
+      - SECRET_KEY=django-insecure-=2#6&5#1=!bi(ph-+jb-!3n6j(n)$$4#x#3m1jro$$erun%0+ald
     volumes:
-      - .:/code
+      - .:/app
     ports:
       - 8000:8000
     depends_on:
