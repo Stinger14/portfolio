@@ -6,7 +6,7 @@
     {% for project in project_list %}
         <div>
             <h2>
-                <a href="{% url 'project.get_absolute_url'  %}">{{ project.title }}</a>
+                <a href="{{ project.get_absolute_url }}">{{ project.title }}</a>
             </h2>
         </div>
     {% endfor %}
