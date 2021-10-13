@@ -9,6 +9,13 @@
                 <p>Title: {{ project.title }}</p>
                 <p>Description: {{ project.description }}</p>
             </div>
-
+    <div>
+        <h3>Reviews</h3>
+        <ul>
+            {% for review in project.reviews.all %}
+                <li>{{ review.review }} ({{ review.author }})</li>
+            {% endfor %}
+        </ul>
+    </div>
     </div>
 {% endblock content %}
