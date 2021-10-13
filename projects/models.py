@@ -13,12 +13,14 @@ class Project(models.Model):
     )
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=500)
+    author = models.CharField(max_length=200, blank=True)
+    cover = models.ImageField(upload_to='covers/', blank=True, null=True)
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('project_detail', args=[str(self.id)])
+        return reverse('project_detail', kwargs={'pk': str(self.pk)})
 
 
 class Review(models.Model):
