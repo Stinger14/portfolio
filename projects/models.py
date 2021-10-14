@@ -16,6 +16,13 @@ class Project(models.Model):
     author = models.CharField(max_length=200, blank=True)
     cover = models.ImageField(upload_to='covers/', blank=True, null=True)
 
+
+    class Meta:
+        permissions = [
+            ('special_status', 'Can read all projects'),
+        ]
+
+
     def __str__(self):
         return self.title
 
