@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+{% block title %}Donations{% endblock title %}
+
+{% block content %}
+    <h1>Donations page</h1>
+    <h4>Donate $5.00 </h4>
+    <form action="{% url 'charge' %}" method="post">
+        {% csrf_token %}
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="{{ stripe_key }}" data-description="All Projects"
+                data-amount="500" data-locale="auto">
+        </script>
+    </form>
+{% endblock content %}

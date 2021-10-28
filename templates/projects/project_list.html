@@ -3,6 +3,9 @@
 {% block title %}Projects{% endblock title %}
 
 {% block content %}
+{% if not perms.projects.special_status %}
+<a href="{% url 'orders' %}" class="btn btn-success">Get all projects</a>
+{% endif %}
     {% for project in project_list %}
         <div>
             <h2>
