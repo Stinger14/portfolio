@@ -20,3 +20,10 @@ class ProjectDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView)
     template_name = 'projects/project_detail.html'
     login_url = 'account_login'
     permission_required = 'projects.special_status'
+
+
+class SearchResultsListView(ListView):
+    model = Project
+    context_object_name = 'search_results'
+    template_name = 'projects/search_results.html'
+
