@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'projects.apps.ProjectsConfig',
     'orders.apps.OrdersConfig',
+    'sourcefeed.apps.SourcefeedConfig',
 ]
 
 MIDDLEWARE = [

@@ -11,6 +11,8 @@ django-allauth = "*"
 python-dotenv = "*"
 pillow = "*"
 stripe = "*"
+feedparser = "*"
+django-apscheduler = "*"
 
 [dev-packages]
 
