@@ -36,7 +36,7 @@ def fetch_realpython_podcasts():
     save_new_episodes(_feed)
 
 def fetch_talkpython_episodes():
-    _feed = feedparser.parse("https://realpython.com/podcasts/rpp/feed")
+    _feed = feedparser.parse("https://realpython.fm/episodes/rss")
     save_new_episodes(_feed)
 
 

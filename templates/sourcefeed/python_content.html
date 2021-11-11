@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+{% extends '_base.html' %}
+
+{% block title %}{{python_content.title}}{% endblock title%}
+
+{% block content %}
+	
 <html lang="en">
   <head>
     {% load static %}
@@ -19,7 +24,7 @@
       <nav class="container">
         <div class="row">
           <div class="col text-center">
-            <img src="{% static 'images/newsfeed.jpg' %}" alt="Python Content Logo" id="site-logo" />
+            <img src="{% static 'images/rpp.jpg' %}" alt="Python Content Logo" id="site-logo" />
 			<div class="d-flex">
 					<div><h4 class="card-title p-4">Python Content</h4><br></div>
 			</div>
@@ -70,3 +75,5 @@
     ></script>
   </body>
 </html>
+{% endblock content %}
+
