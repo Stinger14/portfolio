@@ -13,6 +13,7 @@ pillow = "*"
 stripe = "*"
 feedparser = "*"
 django-apscheduler = "*"
+python-dateutil = "*"
 
 [dev-packages]
 
