@@ -8,7 +8,7 @@ class PythonFeed(models.Model):
     link = models.URLField()
     image = models.URLField()
     sourcefeed = models.CharField(max_length=100)
-    guid = models.CharField(max_length=50)
+    guid = models.CharField(max_length=100)
 
     def __str__(self) -> str:
         return f"{self.sourcefeed}: {self.title}"

@@ -6,6 +6,11 @@
 {% if not perms.projects.special_status %}
 <a href="{% url 'orders' %}" class="btn btn-success">Get all projects</a>
 {% endif %}
+<div>
+	<form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
+<input name="q" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+	</form>		
+</div>
     {% for project in project_list %}
         <div>
             <h2>

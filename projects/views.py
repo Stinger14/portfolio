@@ -30,7 +30,8 @@ class SearchResultsListView(ListView):
     template_name = 'projects/search_results.html'
 
     def get_queryset(self):
+        query = self.request.GET.get('q')
         return Project.objects.filter(
-            Q(title__icontains='aggregator') | Q(title__icontains='Blog')
+            Q(title__icontains=query) | Q(author__icontains=query)
         )
 
