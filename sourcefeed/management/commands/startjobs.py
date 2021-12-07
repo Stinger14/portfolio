@@ -102,4 +102,3 @@ class Command(BaseCommand):
             scheduler.shutdown()
             logger.info("Scheduler shutdown successfully!")
 
-    
